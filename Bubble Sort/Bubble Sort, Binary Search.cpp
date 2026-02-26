@@ -64,16 +64,20 @@ int BinarySearch(int arr[], const int arrSize, int target) {
 	int high = arrSize - 1, low = 0, mid;
 	bool stop = false;
 	while (true) {
+		// set the midpoint
 		mid = low + (high - low) / 2;
 		if (target == arr[mid])
 			return mid;
+		// if the value is higher than the midpoint, set lower bound to one above the midpoint
 		else if (target > arr[mid])
 			low = mid + 1;
+		// if the value is lower than the midpoint, set upper bound to one below the midpoint
 		else if (target < arr[mid])
 			high = mid - 1;
 		
 		if (stop)
 			return -1;
+		// after the break so it doesn't break early
 		if (high == low || high < low)
 			stop = true;
 	}
