@@ -1,0 +1,34 @@
+Angel
+- Immune to cold, acid
+- Resist 10 fire, electricity
+= +4 AC against evil
+- Good attacks
+Archon
+- Immune to electricity
+= +2 AC against evil
+- Good attacks
+Baatezu
+- Immune to fire
+- Resist 10 acid, cold
+- Evil, lawful attacks
+Cold
+- Immune to cold
+- Vulnerable to fire
+Eladrin
+- Immune to electriciy
+- Resist 10 cold, fire
+Fire
+- Immune to fire
+- Vulnerable to cold
+Guardinal
+- Immune to electricity
+- Resist 10 cold, sonic
+- Good attacks
+Swarm
+- Immune to crits
+- Immune to slash and pierce
+= HD/5 rounded up D6 damage per turn
+Tanar'ri
+- Immune to electricity
+- Resist 10 acid, cold, fire
+- Evil, chaotic attacks

@@ -1,0 +1,34 @@
+Abberation
+- D8
+Animal
+- D8
+Construct
+- D10
+- Immune to crits
+Dragon
+- D12
+Elemental
+- D8
+Fey
+- D6
+Giant
+- D8
+Humanoid
+- D8
+Magical Beast
+- D10
+Monstrous Humanoid
+- D8
+Ooze
+- D10
+- Immune to crits
+Outsider
+- D8
+Plant
+- D8
+- Immune to crits
+Undead
+- D12
+- Immune to crits
+Vermin
+- D8
