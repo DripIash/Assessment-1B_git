@@ -539,8 +539,10 @@ void SetMob(Mob& mob) {
 		// get damage reduction
 		cout << " -Damage reduction (enter 0 if none): ";
 		cin >> mob.damageReduction;
-		cout << " -What damage types bypass DR?:\n :";
-		AddProperties(mob, 'b');
+		if (mob.damageReduction != 0) {
+			cout << " -What damage types bypass DR?:\n :";
+			AddProperties(mob, 'b');
+		}
 	}
 
 	// get size
