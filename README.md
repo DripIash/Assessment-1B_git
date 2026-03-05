@@ -37,15 +37,15 @@ The pointers swaps 2 integers using pointers.
 ### Background info
 For the mob battle, I chose to do a simulation of Dungeons & Dragons combat, using version 3.5's ruleset.
 I've included initiative, health, armour class (AC), single weapon attacks with additional damage (1d8 cold for example), immunities, vulnerabilities, resistances, and damage reduction.
-The types and subtypes that I've included are in [types](/Types.txt) and [subtypes](/Subtypes.txt).
+The types and subtypes that I've included are in [types](/readmeAssets/Types.txt) and [subtypes](/readmeAssets/Subtypes.txt).
 ### How to use
 To use the simulation, we have to enter all the details of each monster one by one.  
 Everything is case sensitive, so for the size, type, subtype, immunities etc, enter for example 'Huge' or 'Magical Beast'.  
-An example of what to enter is in [this file](/test.txt), you simply have to copy and paste it into the program, then hit enter to run the simulation. 
+An example of what to enter is in [this example](/readmeAssets/test.txt), you simply have to copy and paste it into the program, then hit enter to run the simulation. 
 For most cases, we only need the table. A list of monsters can be found at [this link](https://www.d20srd.org/indexes/monsters.htm).
 
 #### **EXAMPLE**
-![Monster info page on d20srd.org](/Images/frost_worm.png)
+![Monster info page on d20srd.org](/readmeAssets/frost_worm.png)
 The rows we need to pull information from are:
 - Size/Type
 - Hit Dice
@@ -54,9 +54,10 @@ The rows we need to pull information from are:
 - Special Qualities
 - Abilities
 
-![Relevant info highlighted](/Images/frost_worm_annotat.png)
+![Relevant info highlighted](/readmeAssets/frost_worm_annotat.png)
 
-We enter(inputs are in ''): 
+[Example](/readmeAssets/example_1.txt) (also includes part 2)  
+We enter('input'): 
 ```
 -Name: 'Frost Worm'
 -Type: 'Magical Beast'
@@ -89,7 +90,68 @@ Excluding attributes already gained from the subtype: //refer to subtypes file t
 -Minimum roll for crit: '20' //enter 20 if not in table
 -Crit multiplier: '2'        //enter 2 if not in table
 -Additional damage type: 'Cold'
--Additional damage die: 'd8'
+-Additional damage die: d'8'
 -How many d8: '1'
+```
+Next, we have to enter another monster's info. We could use the frost worm again, or we could look at a different monster.
+
+![Relevant info 2](/readmeAssets/barghest_annotat.png)
+
+We enter('input'): 
+```
+-Name: 'Barghest'
+-Type: 'Outsider'
+-Subtype: 'none'
+-Alignment subtypes:
+:'Evil'
+:'Lawful'
+:none
+
+Excluding attributes already gained from the subtype:
+-Immunities:
+:'none'
+-Vulnerabilities:
+:'none'
+-Resistances:
+:'none'
+-Damage reduction (enter 0 if none): '5'
+ -What damage types bypass DR?:
+ :'none'
+
+-Size: 'Medium'
+-Health = How many d10: '6'
+-Plus how much extra: '6'
+-Dexterity bonus: '2'
+-Armour bonus (natural and worn armour): '6'
+
+-Weapon: 'Bite'
+-Damage type: 'Bludgeon'
+-Attack bonus: '9'
+-Damage die: d'6'
+-How many d8: '1'
+-Plus how much extra damage: '3'
+-Minimum roll for crit: '20'
+-Crit multiplier: '2'
+-Additional damage type: 'none'
+```
+After hitting enter on the last 'none', the simulation will run.  
+(Example scenario, rng is used so it's different each time)  
+```
++++++++++ FIGHT +++++++++
+ ||||| Frost Worm (163HP) VS Barghest (40HP) |||||
+
+ ROUND 1
+ The Frost Worm hit the Barghest for 20 damage
+ Barghest health remaining: 20
+ The Barghest missed
 
 
+ ROUND 2
+ The Frost Worm hit the Barghest for 21 damage
+ Barghest health remaining: -1
+
+ ==== WINNER ====
+ The Frost Worm killed the Barghest, with 163 health remaining
+
+======END======
+```
