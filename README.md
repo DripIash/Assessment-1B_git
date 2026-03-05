@@ -40,9 +40,13 @@ I've included initiative, health, armour class (AC), single weapon attacks with 
 The types and subtypes that I've included are in [types](/readmeAssets/Types.txt) and [subtypes](/readmeAssets/Subtypes.txt).
 ### How to use
 To use the simulation, we have to enter all the details of each monster one by one.  
-Everything is case sensitive, so for the size, type, subtype, immunities etc, enter for example 'Huge' or 'Magical Beast'.  
+> [!WARNING]
+> Everything is case sensitive, so for the size, type, subtype, immunities etc, enter for example 'Huge' or 'Magical Beast'.
+
 An example of what to enter is in [this example](/readmeAssets/test.txt), you simply have to copy and paste it into the program, then hit enter to run the simulation. 
-For most cases, we only need the table. A list of monsters can be found at [this link](https://www.d20srd.org/indexes/monsters.htm).
+For most cases, we only need the table. 
+> [!NOTE]
+> A list of monsters can be found at [this link](https://www.d20srd.org/indexes/monsters.htm).
 
 #### **EXAMPLE**
 ![Monster info page on d20srd.org](/readmeAssets/frost_worm.png)
